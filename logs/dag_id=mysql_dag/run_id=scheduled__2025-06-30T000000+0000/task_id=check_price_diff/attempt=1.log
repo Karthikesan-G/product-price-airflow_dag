@@ -1,0 +1,28 @@
+[2025-07-02T11:03:15.893+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-02T11:03:16.076+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mysql_dag.check_price_diff scheduled__2025-06-30T00:00:00+00:00 [queued]>
+[2025-07-02T11:03:16.086+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mysql_dag.check_price_diff scheduled__2025-06-30T00:00:00+00:00 [queued]>
+[2025-07-02T11:03:16.087+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-07-02T11:03:16.103+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): check_price_diff> on 2025-06-30 00:00:00+00:00
+[2025-07-02T11:03:16.111+0000] {standard_task_runner.py:63} INFO - Started process 196 to run task
+[2025-07-02T11:03:16.115+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'mysql_dag', 'check_price_diff', 'scheduled__2025-06-30T00:00:00+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/mysql.py', '--cfg-path', '/tmp/tmpd45n649z']
+[2025-07-02T11:03:16.119+0000] {standard_task_runner.py:91} INFO - Job 95: Subtask check_price_diff
+[2025-07-02T11:03:16.142+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-02T11:03:16.208+0000] {task_command.py:426} INFO - Running <TaskInstance: mysql_dag.check_price_diff scheduled__2025-06-30T00:00:00+00:00 [running]> on host 76fc2b11611c
+[2025-07-02T11:03:16.326+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Karthik' AIRFLOW_CTX_DAG_ID='mysql_dag' AIRFLOW_CTX_TASK_ID='check_price_diff' AIRFLOW_CTX_EXECUTION_DATE='2025-06-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-30T00:00:00+00:00'
+[2025-07-02T11:03:16.328+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-02T11:03:16.501+0000] {logging_mixin.py:188} INFO - (1, 'Sharp Objects', Decimal('29.00'))
+[2025-07-02T11:03:16.504+0000] {logging_mixin.py:188} INFO - (2, 'In a Dark, Dark Wood', Decimal('22.00'))
+[2025-07-02T11:03:16.506+0000] {logging_mixin.py:188} INFO - (5, 'The Murder of Roger Ackroyd (Hercule Poirot #4)', Decimal('27.00'))
+[2025-07-02T11:03:16.506+0000] {logging_mixin.py:188} INFO - (6, 'The Last Mile (Amos Decker #2)', Decimal('15.00'))
+[2025-07-02T11:03:16.507+0000] {logging_mixin.py:188} INFO - (8, 'Tastes Like Fear (DI Marnie Rome #3)', Decimal('11.00'))
+[2025-07-02T11:03:16.508+0000] {logging_mixin.py:188} INFO - (18, 'What Happened on Beale Street (Secrets of the South Mysteries #2)', Decimal('17.00'))
+[2025-07-02T11:03:16.509+0000] {logging_mixin.py:188} INFO - (19, "The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)", Decimal('11.00'))
+[2025-07-02T11:03:16.510+0000] {logging_mixin.py:188} INFO - (23, 'The Silkworm (Cormoran Strike #2)', Decimal('21.00'))
+[2025-07-02T11:03:16.511+0000] {logging_mixin.py:188} INFO - (24, 'The Exiled', Decimal('12.00'))
+[2025-07-02T11:03:16.512+0000] {logging_mixin.py:188} INFO - (29, 'The Girl You Lost', Decimal('23.00'))
+[2025-07-02T11:03:16.516+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-02T11:03:16.518+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-02T11:03:16.535+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=mysql_dag, task_id=check_price_diff, run_id=scheduled__2025-06-30T00:00:00+00:00, execution_date=20250630T000000, start_date=20250702T110316, end_date=20250702T110316
+[2025-07-02T11:03:16.571+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-02T11:03:16.591+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-02T11:03:16.595+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

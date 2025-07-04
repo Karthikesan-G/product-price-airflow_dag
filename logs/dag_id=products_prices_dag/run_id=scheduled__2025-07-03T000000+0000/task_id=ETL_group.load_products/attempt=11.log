@@ -1,0 +1,35 @@
+[2025-07-04T04:10:45.163+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-04T04:10:45.370+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: products_prices_dag.ETL_group.load_products scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T04:10:45.388+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: products_prices_dag.ETL_group.load_products scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T04:10:45.390+0000] {taskinstance.py:2306} INFO - Starting attempt 11 of 13
+[2025-07-04T04:10:45.448+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): ETL_group.load_products> on 2025-07-03 00:00:00+00:00
+[2025-07-04T04:10:45.460+0000] {standard_task_runner.py:63} INFO - Started process 2060 to run task
+[2025-07-04T04:10:45.468+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'products_prices_dag', 'ETL_group.load_products', 'scheduled__2025-07-03T00:00:00+00:00', '--job-id', '193', '--raw', '--subdir', 'DAGS_FOLDER/products_prices_dag.py', '--cfg-path', '/tmp/tmp1sdopzay']
+[2025-07-04T04:10:45.475+0000] {standard_task_runner.py:91} INFO - Job 193: Subtask ETL_group.load_products
+[2025-07-04T04:10:45.515+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-04T04:10:45.615+0000] {task_command.py:426} INFO - Running <TaskInstance: products_prices_dag.ETL_group.load_products scheduled__2025-07-03T00:00:00+00:00 [running]> on host e43ce2a1e7a4
+[2025-07-04T04:10:45.788+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='karthik' AIRFLOW_CTX_DAG_ID='products_prices_dag' AIRFLOW_CTX_TASK_ID='ETL_group.load_products' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='11' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-03T00:00:00+00:00'
+[2025-07-04T04:10:45.792+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-04T04:10:45.987+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-04T04:10:45.989+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/fakestoreapi/get_products.py", line 91, in load_data
+    cursor.execute(inserT, values)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mysql/connector/cursor_cext.py", line 367, in execute
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Not all parameters were used in the SQL statement
+[2025-07-04T04:10:46.030+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=products_prices_dag, task_id=ETL_group.load_products, run_id=scheduled__2025-07-03T00:00:00+00:00, execution_date=20250703T000000, start_date=20250704T041045, end_date=20250704T041046
+[2025-07-04T04:10:46.086+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 193 for task ETL_group.load_products (Not all parameters were used in the SQL statement; 2060)
+[2025-07-04T04:10:46.127+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-07-04T04:10:46.169+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-04T04:10:46.177+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

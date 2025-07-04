@@ -1,0 +1,114 @@
+[2025-06-30T06:09:48.052+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-30T06:09:48.251+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mysql_dag.scrape_books manual__2025-06-30T06:09:44.420737+00:00 [queued]>
+[2025-06-30T06:09:48.262+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mysql_dag.scrape_books manual__2025-06-30T06:09:44.420737+00:00 [queued]>
+[2025-06-30T06:09:48.263+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-30T06:09:48.320+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): scrape_books> on 2025-06-30 06:09:44.420737+00:00
+[2025-06-30T06:09:48.329+0000] {standard_task_runner.py:63} INFO - Started process 1205 to run task
+[2025-06-30T06:09:48.336+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'mysql_dag', 'scrape_books', 'manual__2025-06-30T06:09:44.420737+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/mysql.py', '--cfg-path', '/tmp/tmpe0_9jiax']
+[2025-06-30T06:09:48.342+0000] {standard_task_runner.py:91} INFO - Job 69: Subtask scrape_books
+[2025-06-30T06:09:48.367+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-06-30T06:09:48.435+0000] {task_command.py:426} INFO - Running <TaskInstance: mysql_dag.scrape_books manual__2025-06-30T06:09:44.420737+00:00 [running]> on host 76cdd04f4df6
+[2025-06-30T06:09:48.688+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Karthik' AIRFLOW_CTX_DAG_ID='mysql_dag' AIRFLOW_CTX_TASK_ID='scrape_books' AIRFLOW_CTX_EXECUTION_DATE='2025-06-30T06:09:44.420737+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-30T06:09:44.420737+00:00'
+[2025-06-30T06:09:48.691+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-30T06:09:50.430+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:50.477+0000] {logging_mixin.py:188} INFO - category ::  Mystery
+[2025-06-30T06:09:50.479+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/mystery_3/index.html
+[2025-06-30T06:09:50.849+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:50.889+0000] {logging_mixin.py:188} INFO - blocks ::  20
+[2025-06-30T06:09:51.250+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:51.662+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:52.065+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:52.375+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:52.785+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:53.191+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:53.499+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:53.783+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:54.115+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:54.550+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:54.850+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:55.215+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:55.551+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:55.959+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:56.369+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:56.778+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:57.143+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:57.494+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:57.905+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:58.206+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:58.227+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/mystery_3/page-2.html
+[2025-06-30T06:09:58.522+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:58.545+0000] {logging_mixin.py:188} INFO - blocks ::  12
+[2025-06-30T06:09:58.929+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:59.235+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:09:59.748+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:00.157+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:00.565+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:00.919+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:01.283+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:01.589+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:01.898+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:02.205+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:02.614+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:03.025+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:03.048+0000] {logging_mixin.py:188} INFO - category ::  Philosophy
+[2025-06-30T06:10:03.049+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html
+[2025-06-30T06:10:03.433+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:03.456+0000] {logging_mixin.py:188} INFO - blocks ::  11
+[2025-06-30T06:10:03.740+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:04.048+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:04.427+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:04.727+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:05.022+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:05.318+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:05.688+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:05.994+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:06.284+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:06.576+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:06.859+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:06.885+0000] {logging_mixin.py:188} INFO - category ::  Fantasy
+[2025-06-30T06:10:06.887+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html
+[2025-06-30T06:10:07.145+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:07.174+0000] {logging_mixin.py:188} INFO - blocks ::  20
+[2025-06-30T06:10:07.423+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:07.701+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:07.962+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:08.223+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:08.503+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:08.798+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:09.060+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:09.350+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:09.626+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:09.909+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:10.192+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:10.478+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:10.850+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:11.132+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:11.503+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:11.768+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:12.070+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:12.442+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:12.726+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:13.103+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:13.127+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/fantasy_19/page-2.html
+[2025-06-30T06:10:13.486+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:13.536+0000] {logging_mixin.py:188} INFO - blocks ::  20
+[2025-06-30T06:10:13.678+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to skipped. Terminating instance.
+[2025-06-30T06:10:13.680+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-06-30T06:10:13.684+0000] {process_utils.py:132} INFO - Sending 15 to group 1205. PIDs of all processes in the group: [1205]
+[2025-06-30T06:10:13.685+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1205
+[2025-06-30T06:10:13.687+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-30T06:10:13.704+0000] {logging_mixin.py:188} INFO - title                  object
+price                 float64
+availability           object
+availability_count      int64
+star_rating           float64
+description            object
+upc                    object
+product_type           object
+number_of_reviews       int64
+image_url              object
+book_link              object
+category_name          object
+dtype: object
+[2025-06-30T06:10:13.724+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-30T06:10:13.780+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1205, status='terminated', exitcode=0, started='06:09:47') (1205) terminated with exit code 0

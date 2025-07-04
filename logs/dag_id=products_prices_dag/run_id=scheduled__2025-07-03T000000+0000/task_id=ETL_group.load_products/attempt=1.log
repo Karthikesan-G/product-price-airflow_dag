@@ -1,0 +1,226 @@
+[2025-07-04T03:51:54.674+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-04T03:51:54.960+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: products_prices_dag.ETL_group.load_products scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T03:51:54.981+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: products_prices_dag.ETL_group.load_products scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T03:51:54.982+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2025-07-04T03:51:55.042+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): ETL_group.load_products> on 2025-07-03 00:00:00+00:00
+[2025-07-04T03:51:55.052+0000] {standard_task_runner.py:63} INFO - Started process 1383 to run task
+[2025-07-04T03:51:55.059+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'products_prices_dag', 'ETL_group.load_products', 'scheduled__2025-07-03T00:00:00+00:00', '--job-id', '171', '--raw', '--subdir', 'DAGS_FOLDER/products_prices_dag.py', '--cfg-path', '/tmp/tmpjw8gqrdv']
+[2025-07-04T03:51:55.065+0000] {standard_task_runner.py:91} INFO - Job 171: Subtask ETL_group.load_products
+[2025-07-04T03:51:55.104+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-04T03:51:55.217+0000] {task_command.py:426} INFO - Running <TaskInstance: products_prices_dag.ETL_group.load_products scheduled__2025-07-03T00:00:00+00:00 [running]> on host e43ce2a1e7a4
+[2025-07-04T03:51:55.392+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='karthik' AIRFLOW_CTX_DAG_ID='products_prices_dag' AIRFLOW_CTX_TASK_ID='ETL_group.load_products' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-03T00:00:00+00:00'
+[2025-07-04T03:51:55.396+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-04T03:51:55.623+0000] {logging_mixin.py:188} INFO - product_id                                                      1
+product_name    Fjallraven - Foldsack No. 1 Backpack, Fits 15 ...
+price                                                      109.95
+category        Your perfect pack for everyday use and walks i...
+description                                        men's clothing
+image_link      https://fakestoreapi.com/img/81fPKd-2AYL._AC_S...
+rating                                                        3.9
+rating_count                                                  120
+Name: 0, dtype: object
+[2025-07-04T03:51:55.626+0000] {logging_mixin.py:188} INFO - product_id                                                      2
+product_name               Mens Casual Premium Slim Fit T-Shirts 
+price                                                        22.3
+category        Slim-fitting style, contrast raglan long sleev...
+description                                        men's clothing
+image_link      https://fakestoreapi.com/img/71-3HjGNDUL._AC_S...
+rating                                                        4.1
+rating_count                                                  259
+Name: 1, dtype: object
+[2025-07-04T03:51:55.628+0000] {logging_mixin.py:188} INFO - product_id                                                      3
+product_name                                   Mens Cotton Jacket
+price                                                       55.99
+category        great outerwear jackets for Spring/Autumn/Wint...
+description                                        men's clothing
+image_link      https://fakestoreapi.com/img/71li-ujtlUL._AC_U...
+rating                                                        4.7
+rating_count                                                  500
+Name: 2, dtype: object
+[2025-07-04T03:51:55.631+0000] {logging_mixin.py:188} INFO - product_id                                                      4
+product_name                                 Mens Casual Slim Fit
+price                                                       15.99
+category        The color could be slightly different between ...
+description                                        men's clothing
+image_link      https://fakestoreapi.com/img/71YXzeOuslL._AC_U...
+rating                                                        2.1
+rating_count                                                  430
+Name: 3, dtype: object
+[2025-07-04T03:51:55.633+0000] {logging_mixin.py:188} INFO - product_id                                                      5
+product_name    John Hardy Women's Legends Naga Gold & Silver ...
+price                                                       695.0
+category        From our Legends Collection, the Naga was insp...
+description                                              jewelery
+image_link      https://fakestoreapi.com/img/71pWzhdJNwL._AC_U...
+rating                                                        4.6
+rating_count                                                  400
+Name: 4, dtype: object
+[2025-07-04T03:51:55.635+0000] {logging_mixin.py:188} INFO - product_id                                                      6
+product_name                         Solid Gold Petite Micropave 
+price                                                       168.0
+category        Satisfaction Guaranteed. Return or exchange an...
+description                                              jewelery
+image_link      https://fakestoreapi.com/img/61sbMiUnoGL._AC_U...
+rating                                                        3.9
+rating_count                                                   70
+Name: 5, dtype: object
+[2025-07-04T03:51:55.638+0000] {logging_mixin.py:188} INFO - product_id                                                      7
+product_name                           White Gold Plated Princess
+price                                                        9.99
+category        Classic Created Wedding Engagement Solitaire D...
+description                                              jewelery
+image_link      https://fakestoreapi.com/img/71YAIFU48IL._AC_U...
+rating                                                        3.0
+rating_count                                                  400
+Name: 6, dtype: object
+[2025-07-04T03:51:55.640+0000] {logging_mixin.py:188} INFO - product_id                                                      8
+product_name    Pierced Owl Rose Gold Plated Stainless Steel D...
+price                                                       10.99
+category        Rose Gold Plated Double Flared Tunnel Plug Ear...
+description                                              jewelery
+image_link      https://fakestoreapi.com/img/51UDEzMJVpL._AC_U...
+rating                                                        1.9
+rating_count                                                  100
+Name: 7, dtype: object
+[2025-07-04T03:51:55.642+0000] {logging_mixin.py:188} INFO - product_id                                                      9
+product_name    WD 2TB Elements Portable External Hard Drive -...
+price                                                        64.0
+category        USB 3.0 and USB 2.0 Compatibility Fast data tr...
+description                                           electronics
+image_link      https://fakestoreapi.com/img/61IBBVJvSDL._AC_S...
+rating                                                        3.3
+rating_count                                                  203
+Name: 8, dtype: object
+[2025-07-04T03:51:55.644+0000] {logging_mixin.py:188} INFO - product_id                                                     10
+product_name    SanDisk SSD PLUS 1TB Internal SSD - SATA III 6...
+price                                                       109.0
+category        Easy upgrade for faster boot up, shutdown, app...
+description                                           electronics
+image_link      https://fakestoreapi.com/img/61U7T1koQqL._AC_S...
+rating                                                        2.9
+rating_count                                                  470
+Name: 9, dtype: object
+[2025-07-04T03:51:55.648+0000] {logging_mixin.py:188} INFO - product_id                                                     11
+product_name    Silicon Power 256GB SSD 3D NAND A55 SLC Cache ...
+price                                                       109.0
+category        3D NAND flash are applied to deliver high tran...
+description                                           electronics
+image_link      https://fakestoreapi.com/img/71kWymZ+c+L._AC_S...
+rating                                                        4.8
+rating_count                                                  319
+Name: 10, dtype: object
+[2025-07-04T03:51:55.650+0000] {logging_mixin.py:188} INFO - product_id                                                     12
+product_name    WD 4TB Gaming Drive Works with Playstation 4 P...
+price                                                       114.0
+category        Expand your PS4 gaming experience, Play anywhe...
+description                                           electronics
+image_link      https://fakestoreapi.com/img/61mtL65D4cL._AC_S...
+rating                                                        4.8
+rating_count                                                  400
+Name: 11, dtype: object
+[2025-07-04T03:51:55.652+0000] {logging_mixin.py:188} INFO - product_id                                                     13
+product_name    Acer SB220Q bi 21.5 inches Full HD (1920 x 108...
+price                                                       599.0
+category        21. 5 inches Full HD (1920 x 1080) widescreen ...
+description                                           electronics
+image_link      https://fakestoreapi.com/img/81QpkIctqPL._AC_S...
+rating                                                        2.9
+rating_count                                                  250
+Name: 12, dtype: object
+[2025-07-04T03:51:55.655+0000] {logging_mixin.py:188} INFO - product_id                                                     14
+product_name    Samsung 49-Inch CHG90 144Hz Curved Gaming Moni...
+price                                                      999.99
+category        49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MON...
+description                                           electronics
+image_link      https://fakestoreapi.com/img/81Zt42ioCgL._AC_S...
+rating                                                        2.2
+rating_count                                                  140
+Name: 13, dtype: object
+[2025-07-04T03:51:55.657+0000] {logging_mixin.py:188} INFO - product_id                                                     15
+product_name    BIYLACLESEN Women's 3-in-1 Snowboard Jacket Wi...
+price                                                       56.99
+category        Note:The Jackets is US standard size, Please c...
+description                                      women's clothing
+image_link      https://fakestoreapi.com/img/51Y5NI-I5jL._AC_U...
+rating                                                        2.6
+rating_count                                                  235
+Name: 14, dtype: object
+[2025-07-04T03:51:55.659+0000] {logging_mixin.py:188} INFO - product_id                                                     16
+product_name    Lock and Love Women's Removable Hooded Faux Le...
+price                                                       29.95
+category        100% POLYURETHANE(shell) 100% POLYESTER(lining...
+description                                      women's clothing
+image_link      https://fakestoreapi.com/img/81XH0e8fefL._AC_U...
+rating                                                        2.9
+rating_count                                                  340
+Name: 15, dtype: object
+[2025-07-04T03:51:55.662+0000] {logging_mixin.py:188} INFO - product_id                                                     17
+product_name    Rain Jacket Women Windbreaker Striped Climbing...
+price                                                       39.99
+category        Lightweight perfet for trip or casual wear---L...
+description                                      women's clothing
+image_link      https://fakestoreapi.com/img/71HblAHs5xL._AC_U...
+rating                                                        3.8
+rating_count                                                  679
+Name: 16, dtype: object
+[2025-07-04T03:51:55.665+0000] {logging_mixin.py:188} INFO - product_id                                                     18
+product_name          MBJ Women's Solid Short Sleeve Boat Neck V 
+price                                                        9.85
+category        95% RAYON 5% SPANDEX, Made in USA or Imported,...
+description                                      women's clothing
+image_link      https://fakestoreapi.com/img/71z3kpMAYsL._AC_U...
+rating                                                        4.7
+rating_count                                                  130
+Name: 17, dtype: object
+[2025-07-04T03:51:55.667+0000] {logging_mixin.py:188} INFO - product_id                                                     19
+product_name                   Opna Women's Short Sleeve Moisture
+price                                                        7.95
+category        100% Polyester, Machine wash, 100% cationic po...
+description                                      women's clothing
+image_link      https://fakestoreapi.com/img/51eg55uWmdL._AC_U...
+rating                                                        4.5
+rating_count                                                  146
+Name: 18, dtype: object
+[2025-07-04T03:51:55.669+0000] {logging_mixin.py:188} INFO - product_id                                                     20
+product_name           DANVOUY Womens T Shirt Casual Cotton Short
+price                                                       12.99
+category        95%Cotton,5%Spandex, Features: Casual, Short S...
+description                                      women's clothing
+image_link      https://fakestoreapi.com/img/61pHAEJ4NML._AC_U...
+rating                                                        3.6
+rating_count                                                  145
+Name: 19, dtype: object
+[2025-07-04T03:51:55.672+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-04T03:51:55.673+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-04T03:51:55.693+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=products_prices_dag, task_id=ETL_group.load_products, run_id=scheduled__2025-07-03T00:00:00+00:00, execution_date=20250703T000000, start_date=20250704T035154, end_date=20250704T035155
+[2025-07-04T03:51:55.758+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-04T03:51:55.795+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-04T03:51:55.804+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-07-04T05:33:21.611+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-04T05:33:21.643+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: products_prices_dag.etl_group.load_products scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T05:33:21.654+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: products_prices_dag.etl_group.load_products scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T05:33:21.655+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2025-07-04T05:33:21.694+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): etl_group.load_products> on 2025-07-03 00:00:00+00:00
+[2025-07-04T05:33:21.705+0000] {standard_task_runner.py:63} INFO - Started process 4714 to run task
+[2025-07-04T05:33:21.713+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'products_prices_dag', 'etl_group.load_products', 'scheduled__2025-07-03T00:00:00+00:00', '--job-id', '214', '--raw', '--subdir', 'DAGS_FOLDER/products_prices_dag.py', '--cfg-path', '/tmp/tmp_h8e3_8l']
+[2025-07-04T05:33:21.718+0000] {standard_task_runner.py:91} INFO - Job 214: Subtask etl_group.load_products
+[2025-07-04T05:33:21.746+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-04T05:33:21.823+0000] {task_command.py:426} INFO - Running <TaskInstance: products_prices_dag.etl_group.load_products scheduled__2025-07-03T00:00:00+00:00 [running]> on host e43ce2a1e7a4
+[2025-07-04T05:33:22.028+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='karthik' AIRFLOW_CTX_DAG_ID='products_prices_dag' AIRFLOW_CTX_TASK_ID='etl_group.load_products' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-03T00:00:00+00:00'
+[2025-07-04T05:33:22.031+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-04T05:33:22.340+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-04T05:33:22.342+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-04T05:33:22.354+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=products_prices_dag, task_id=etl_group.load_products, run_id=scheduled__2025-07-03T00:00:00+00:00, execution_date=20250703T000000, start_date=20250704T053321, end_date=20250704T053322
+[2025-07-04T05:33:22.362+0000] {taskinstance.py:1182} ERROR - Error when executing success_slack_msg callback
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1179, in _run_finished_callback
+    callback(context)
+  File "/opt/airflow/dags/products_prices_dag.py", line 35, in success_slack_msg
+    webhook_token=Variable.get("slack_webhook"),
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable slack_webhook does not exist'
+[2025-07-04T05:33:22.412+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-04T05:33:22.427+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/models/baseoperator.py:1297 AirflowProviderDeprecationWarning: Call to deprecated class MySqlOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+[2025-07-04T05:33:22.448+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-04T05:33:22.452+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

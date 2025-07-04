@@ -1,0 +1,56 @@
+[2025-07-03T05:27:53.976+0000] {processor.py:161} INFO - Started process (PID=2314) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:27:53.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:27:53.981+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:27:53.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:27:54.579+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:27:54.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.646 seconds
+[2025-07-03T05:28:24.879+0000] {processor.py:161} INFO - Started process (PID=2337) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:28:24.881+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:28:24.883+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:28:24.882+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:28:25.397+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:28:25.432+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.560 seconds
+[2025-07-03T05:28:55.719+0000] {processor.py:161} INFO - Started process (PID=2360) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:28:55.721+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:28:55.723+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:28:55.723+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:28:56.508+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:28:56.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.833 seconds
+[2025-07-03T05:29:26.719+0000] {processor.py:161} INFO - Started process (PID=2392) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:29:26.721+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:29:26.727+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:29:26.726+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:29:27.316+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:29:27.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.628 seconds
+[2025-07-03T05:29:58.328+0000] {processor.py:161} INFO - Started process (PID=2415) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:29:58.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:29:58.332+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:29:58.331+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:29:58.378+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:29:58.377+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/scripts/fakestoreapi/get_products.py assumed to contain no DAGs. Skipping.
+[2025-07-03T05:29:58.379+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:29:58.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.088 seconds
+[2025-07-03T05:30:28.927+0000] {processor.py:161} INFO - Started process (PID=2437) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:30:28.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:30:28.930+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:30:28.929+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:30:28.965+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:30:28.965+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/scripts/fakestoreapi/get_products.py assumed to contain no DAGs. Skipping.
+[2025-07-03T05:30:28.966+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:30:28.982+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.064 seconds
+[2025-07-03T05:30:59.329+0000] {processor.py:161} INFO - Started process (PID=2459) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:30:59.331+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:30:59.333+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:30:59.333+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:30:59.369+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:30:59.368+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/scripts/fakestoreapi/get_products.py assumed to contain no DAGs. Skipping.
+[2025-07-03T05:30:59.370+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:30:59.390+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.075 seconds
+[2025-07-03T05:31:29.922+0000] {processor.py:161} INFO - Started process (PID=2481) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:31:29.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:31:29.927+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:31:29.927+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:31:29.978+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:31:29.977+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/scripts/fakestoreapi/get_products.py assumed to contain no DAGs. Skipping.
+[2025-07-03T05:31:29.978+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:31:29.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.088 seconds
+[2025-07-03T05:32:00.986+0000] {processor.py:161} INFO - Started process (PID=2503) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:32:00.988+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:32:00.991+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:32:00.990+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:32:01.048+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:32:01.048+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/scripts/fakestoreapi/get_products.py assumed to contain no DAGs. Skipping.
+[2025-07-03T05:32:01.050+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:32:01.077+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.103 seconds
+[2025-07-03T05:32:32.063+0000] {processor.py:161} INFO - Started process (PID=2525) to work on /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:32:32.066+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scripts/fakestoreapi/get_products.py for tasks to queue
+[2025-07-03T05:32:32.068+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:32:32.068+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:32:32.123+0000] {logging_mixin.py:188} INFO - [2025-07-03T05:32:32.123+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/scripts/fakestoreapi/get_products.py assumed to contain no DAGs. Skipping.
+[2025-07-03T05:32:32.124+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/scripts/fakestoreapi/get_products.py
+[2025-07-03T05:32:32.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scripts/fakestoreapi/get_products.py took 0.101 seconds

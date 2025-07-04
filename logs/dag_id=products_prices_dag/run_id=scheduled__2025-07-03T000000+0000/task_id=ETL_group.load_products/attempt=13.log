@@ -1,0 +1,19 @@
+[2025-07-04T04:29:11.791+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-04T04:29:11.964+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: products_prices_dag.ETL_group.load_products scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T04:29:11.975+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: products_prices_dag.ETL_group.load_products scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T04:29:11.976+0000] {taskinstance.py:2306} INFO - Starting attempt 13 of 15
+[2025-07-04T04:29:11.994+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): ETL_group.load_products> on 2025-07-03 00:00:00+00:00
+[2025-07-04T04:29:12.001+0000] {standard_task_runner.py:63} INFO - Started process 2673 to run task
+[2025-07-04T04:29:12.004+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'products_prices_dag', 'ETL_group.load_products', 'scheduled__2025-07-03T00:00:00+00:00', '--job-id', '199', '--raw', '--subdir', 'DAGS_FOLDER/products_prices_dag.py', '--cfg-path', '/tmp/tmpax3fpq1j']
+[2025-07-04T04:29:12.008+0000] {standard_task_runner.py:91} INFO - Job 199: Subtask ETL_group.load_products
+[2025-07-04T04:29:12.031+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-04T04:29:12.109+0000] {task_command.py:426} INFO - Running <TaskInstance: products_prices_dag.ETL_group.load_products scheduled__2025-07-03T00:00:00+00:00 [running]> on host e43ce2a1e7a4
+[2025-07-04T04:29:12.272+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='karthik' AIRFLOW_CTX_DAG_ID='products_prices_dag' AIRFLOW_CTX_TASK_ID='ETL_group.load_products' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='13' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-03T00:00:00+00:00'
+[2025-07-04T04:29:12.277+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-04T04:29:12.658+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-04T04:29:12.659+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-04T04:29:12.670+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=products_prices_dag, task_id=ETL_group.load_products, run_id=scheduled__2025-07-03T00:00:00+00:00, execution_date=20250703T000000, start_date=20250704T042911, end_date=20250704T042912
+[2025-07-04T04:29:12.700+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-04T04:29:12.722+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/models/baseoperator.py:1297 AirflowProviderDeprecationWarning: Call to deprecated class MySqlOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+[2025-07-04T04:29:12.750+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-04T04:29:12.756+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

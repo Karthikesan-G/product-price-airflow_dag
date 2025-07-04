@@ -1,0 +1,239 @@
+[2025-06-30T06:10:58.073+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-30T06:10:58.281+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mysql_dag.scrape_books manual__2025-06-30T06:10:56.514507+00:00 [queued]>
+[2025-06-30T06:10:58.292+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mysql_dag.scrape_books manual__2025-06-30T06:10:56.514507+00:00 [queued]>
+[2025-06-30T06:10:58.295+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-30T06:10:58.350+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): scrape_books> on 2025-06-30 06:10:56.514507+00:00
+[2025-06-30T06:10:58.363+0000] {standard_task_runner.py:63} INFO - Started process 1232 to run task
+[2025-06-30T06:10:58.371+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'mysql_dag', 'scrape_books', 'manual__2025-06-30T06:10:56.514507+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/mysql.py', '--cfg-path', '/tmp/tmp84ukqv_k']
+[2025-06-30T06:10:58.380+0000] {standard_task_runner.py:91} INFO - Job 71: Subtask scrape_books
+[2025-06-30T06:10:58.421+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-06-30T06:10:58.505+0000] {task_command.py:426} INFO - Running <TaskInstance: mysql_dag.scrape_books manual__2025-06-30T06:10:56.514507+00:00 [running]> on host 76cdd04f4df6
+[2025-06-30T06:10:58.701+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Karthik' AIRFLOW_CTX_DAG_ID='mysql_dag' AIRFLOW_CTX_TASK_ID='scrape_books' AIRFLOW_CTX_EXECUTION_DATE='2025-06-30T06:10:56.514507+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-30T06:10:56.514507+00:00'
+[2025-06-30T06:10:58.702+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-30T06:11:05.098+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:05.151+0000] {logging_mixin.py:188} INFO - category ::  Mystery
+[2025-06-30T06:11:05.152+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/mystery_3/index.html
+[2025-06-30T06:11:05.513+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:05.560+0000] {logging_mixin.py:188} INFO - blocks ::  20
+[2025-06-30T06:11:07.454+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:07.787+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:08.878+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:09.214+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:09.534+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:10.577+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:10.935+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:11.267+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:11.609+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:11.939+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:12.823+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:13.693+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:14.070+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:15.848+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:17.263+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:10:30.141+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:19.842+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:20.165+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:21.126+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:21.532+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:21.557+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/mystery_3/page-2.html
+[2025-06-30T06:11:21.943+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:21.965+0000] {logging_mixin.py:188} INFO - blocks ::  12
+[2025-06-30T06:11:22.280+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:22.664+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:23.000+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:23.863+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:24.192+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:24.602+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:25.012+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:25.425+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:27.980+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:28.866+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:29.192+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:29.591+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:29.613+0000] {logging_mixin.py:188} INFO - category ::  Philosophy
+[2025-06-30T06:11:29.615+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html
+[2025-06-30T06:11:29.931+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:29.963+0000] {logging_mixin.py:188} INFO - blocks ::  11
+[2025-06-30T06:11:30.277+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:30.610+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:30.946+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:31.303+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:32.795+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:35.558+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:35.972+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:36.378+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:36.712+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:37.553+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:37.857+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:37.881+0000] {logging_mixin.py:188} INFO - category ::  Fantasy
+[2025-06-30T06:11:37.883+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html
+[2025-06-30T06:11:38.945+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:39.007+0000] {logging_mixin.py:188} INFO - blocks ::  20
+[2025-06-30T06:11:39.337+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:39.711+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:40.555+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:41.357+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:41.660+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:42.488+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:43.790+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:44.095+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:44.947+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:45.345+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:45.731+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:46.076+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:46.936+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:47.281+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:47.589+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:49.937+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:50.785+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:52.195+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:52.604+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:53.012+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:53.036+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/fantasy_19/page-2.html
+[2025-06-30T06:11:53.837+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:53.885+0000] {logging_mixin.py:188} INFO - blocks ::  20
+[2025-06-30T06:11:54.240+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:55.071+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:55.467+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:57.234+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:59.494+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:59.785+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:00.082+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:00.366+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:00.689+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:00.977+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:01.918+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:02.227+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:02.517+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:02.816+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:03.112+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:03.402+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:03.692+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:03.985+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:04.381+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:04.790+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:04.809+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/fantasy_19/page-3.html
+[2025-06-30T06:12:05.503+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:05.528+0000] {logging_mixin.py:188} INFO - blocks ::  8
+[2025-06-30T06:12:05.916+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:06.324+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:06.630+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:07.250+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:07.546+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:07.841+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:08.170+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:08.472+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:08.497+0000] {logging_mixin.py:188} INFO - category ::  Poetry
+[2025-06-30T06:12:08.499+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/poetry_23/index.html
+[2025-06-30T06:12:09.051+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:09.086+0000] {logging_mixin.py:188} INFO - blocks ::  19
+[2025-06-30T06:12:09.365+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:09.706+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:10.108+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:10.483+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:10.857+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:11.232+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:11.530+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:11.829+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:12.092+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:12.453+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:12.834+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:13.204+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:13.485+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:13.758+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:14.028+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:14.301+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:14.610+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:14.896+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:15.268+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:15.286+0000] {logging_mixin.py:188} INFO - category ::  Psychology
+[2025-06-30T06:12:15.288+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/psychology_26/index.html
+[2025-06-30T06:12:15.573+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:15.604+0000] {logging_mixin.py:188} INFO - blocks ::  7
+[2025-06-30T06:12:15.928+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:16.199+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:16.490+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:16.759+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:17.035+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:17.312+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:17.589+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:17.604+0000] {logging_mixin.py:188} INFO - category ::  Autobiography
+[2025-06-30T06:12:17.605+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html
+[2025-06-30T06:12:17.860+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:17.893+0000] {logging_mixin.py:188} INFO - blocks ::  9
+[2025-06-30T06:12:18.174+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:18.456+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:18.738+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:11:31.928+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:20.079+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:20.426+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:20.713+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:21.039+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:21.349+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:21.375+0000] {logging_mixin.py:188} INFO - category ::  History
+[2025-06-30T06:12:21.376+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/history_32/index.html
+[2025-06-30T06:12:21.962+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:21.996+0000] {logging_mixin.py:188} INFO - blocks ::  18
+[2025-06-30T06:12:22.373+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:22.783+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:23.115+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:23.413+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:23.705+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:24.101+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:24.387+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:24.729+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:25.023+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:25.341+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:25.641+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:25.958+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:26.265+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:26.572+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:26.982+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:27.276+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:27.599+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:28.010+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:28.031+0000] {logging_mixin.py:188} INFO - category ::  Biography
+[2025-06-30T06:12:28.033+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/biography_36/index.html
+[2025-06-30T06:12:28.314+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:28.340+0000] {logging_mixin.py:188} INFO - blocks ::  5
+[2025-06-30T06:12:28.725+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:29.025+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:29.324+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:29.629+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:29.955+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:29.977+0000] {logging_mixin.py:188} INFO - category ::  Contemporary
+[2025-06-30T06:12:29.978+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html
+[2025-06-30T06:12:30.278+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:30.298+0000] {logging_mixin.py:188} INFO - blocks ::  3
+[2025-06-30T06:12:30.582+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:30.888+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:31.287+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:31.307+0000] {logging_mixin.py:188} INFO - category ::  Spirituality
+[2025-06-30T06:12:31.309+0000] {logging_mixin.py:188} INFO - cat_pg_link ::  https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html
+[2025-06-30T06:12:31.613+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:31.636+0000] {logging_mixin.py:188} INFO - blocks ::  6
+[2025-06-30T06:12:32.060+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:32.407+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:32.748+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:33.044+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:33.343+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:33.640+0000] {logging_mixin.py:188} INFO - CODE ::  200
+[2025-06-30T06:12:33.669+0000] {logging_mixin.py:188} INFO - title                  object
+price                 float64
+availability           object
+availability_count      int64
+star_rating           float64
+description            object
+upc                    object
+product_type           object
+number_of_reviews       int64
+image_url              object
+book_link              object
+category_name          object
+dtype: object
+[2025-06-30T06:12:33.691+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-30T06:12:33.693+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-30T06:12:33.713+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=mysql_dag, task_id=scrape_books, run_id=manual__2025-06-30T06:10:56.514507+00:00, execution_date=20250630T061056, start_date=20250630T061058, end_date=20250630T061233
+[2025-06-30T06:12:33.805+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-30T06:12:33.833+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-30T06:12:33.840+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

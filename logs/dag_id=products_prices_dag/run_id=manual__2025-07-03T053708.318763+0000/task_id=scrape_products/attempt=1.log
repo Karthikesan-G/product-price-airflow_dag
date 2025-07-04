@@ -1,0 +1,20 @@
+[2025-07-03T05:37:13.027+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-03T05:37:13.075+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: products_prices_dag.scrape_products manual__2025-07-03T05:37:08.318763+00:00 [queued]>
+[2025-07-03T05:37:13.093+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: products_prices_dag.scrape_products manual__2025-07-03T05:37:08.318763+00:00 [queued]>
+[2025-07-03T05:37:13.095+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2025-07-03T05:36:23.533+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): scrape_products> on 2025-07-03 05:37:08.318763+00:00
+[2025-07-03T05:36:23.543+0000] {standard_task_runner.py:63} INFO - Started process 2709 to run task
+[2025-07-03T05:36:23.554+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'products_prices_dag', 'scrape_products', 'manual__2025-07-03T05:37:08.318763+00:00', '--job-id', '142', '--raw', '--subdir', 'DAGS_FOLDER/products_prices_dag.py', '--cfg-path', '/tmp/tmpau0_bd2x']
+[2025-07-03T05:36:23.560+0000] {standard_task_runner.py:91} INFO - Job 142: Subtask scrape_products
+[2025-07-03T05:36:23.607+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-03T05:37:13.912+0000] {task_command.py:426} INFO - Running <TaskInstance: products_prices_dag.scrape_products manual__2025-07-03T05:37:08.318763+00:00 [running]> on host 2863529924cf
+[2025-07-03T05:37:14.409+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='karthik' AIRFLOW_CTX_DAG_ID='products_prices_dag' AIRFLOW_CTX_TASK_ID='scrape_products' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T05:37:08.318763+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-03T05:37:08.318763+00:00'
+[2025-07-03T05:37:14.411+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-03T05:37:14.925+0000] {get_products.py:16} INFO - 200
+[2025-07-03T05:37:14.990+0000] {get_products.py:33} INFO - 'count'
+[2025-07-03T05:37:14.994+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-03T05:37:14.996+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-03T05:37:15.018+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=products_prices_dag, task_id=scrape_products, run_id=manual__2025-07-03T05:37:08.318763+00:00, execution_date=20250703T053708, start_date=20250703T053713, end_date=20250703T053715
+[2025-07-03T05:37:15.092+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-03T05:37:15.125+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-03T05:37:15.157+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

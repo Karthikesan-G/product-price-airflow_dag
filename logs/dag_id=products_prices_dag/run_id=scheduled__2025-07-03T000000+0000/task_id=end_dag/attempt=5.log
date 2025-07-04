@@ -1,0 +1,19 @@
+[2025-07-04T06:04:09.672+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-04T06:04:09.704+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: products_prices_dag.end_dag scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T06:04:09.715+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: products_prices_dag.end_dag scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T06:04:09.716+0000] {taskinstance.py:2306} INFO - Starting attempt 5 of 7
+[2025-07-04T06:04:09.732+0000] {taskinstance.py:2330} INFO - Executing <Task(EmptyOperator): end_dag> on 2025-07-03 00:00:00+00:00
+[2025-07-04T06:04:09.739+0000] {standard_task_runner.py:63} INFO - Started process 5761 to run task
+[2025-07-04T06:04:09.743+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'products_prices_dag', 'end_dag', 'scheduled__2025-07-03T00:00:00+00:00', '--job-id', '227', '--raw', '--subdir', 'DAGS_FOLDER/products_prices_dag.py', '--cfg-path', '/tmp/tmpd0u1uje3']
+[2025-07-04T06:04:09.748+0000] {standard_task_runner.py:91} INFO - Job 227: Subtask end_dag
+[2025-07-04T06:04:09.779+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-04T06:04:09.872+0000] {task_command.py:426} INFO - Running <TaskInstance: products_prices_dag.end_dag scheduled__2025-07-03T00:00:00+00:00 [running]> on host e43ce2a1e7a4
+[2025-07-04T06:04:09.975+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='karthik' AIRFLOW_CTX_DAG_ID='products_prices_dag' AIRFLOW_CTX_TASK_ID='end_dag' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-03T00:00:00+00:00'
+[2025-07-04T06:04:09.978+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-04T06:04:09.992+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-04T06:04:10.006+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=products_prices_dag, task_id=end_dag, run_id=scheduled__2025-07-03T00:00:00+00:00, execution_date=20250703T000000, start_date=20250704T060409, end_date=20250704T060410
+[2025-07-04T06:04:10.008+0000] {baseoperator.py:400} WARNING - SlackWebhookOperator.execute cannot be called outside TaskInstance!
+[2025-07-04T06:04:10.021+0000] {base.py:84} INFO - Using connection ID 'slack_conn' for task execution.
+[2025-07-04T06:04:11.046+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-04T06:04:11.082+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-04T06:04:11.089+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
